@@ -14,7 +14,7 @@ So password for the combined folder zip is **impassive3428**
 
 However justsomezip.zip is stil password protected inside the combined folder. So we somehow need the passcode to crack open the flag \! 
 
-![][image3]
+![alt text](avocado2.png)
 
 The first and obvious idea to find the passcode is to use the .wav file somehow. Else what’s the use of giving it. LoL\!
 
@@ -23,8 +23,7 @@ On opening the .wav file we hear some random noises, which is itself an indicati
 So constructing the spectogram for staticnoise.wav file using audacity software I obtained a spectrogram which on compression gave the following   
 as the result→
 
-![][image4]
-
+![alt text](spectrogram.png)
 Now the password is visible as **d41v3ron**
 
 Inside the zip file we find the flag.txt file→
