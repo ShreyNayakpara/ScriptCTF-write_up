@@ -9,8 +9,7 @@ Using Apri Solve/ Binwalk extract the two hidden files inside this jpg image nam
 
 So initially both the files are password protected (i.e. the entire zip folder named 00000196.zip). So here use brute force using **hashcat** and **john the ripper** to extract its passcode. I used rock.txt for getting the hashing reverse.
 
-![][image2]
-
+![alt text](avocado1.png)
 So password for the combined folder zip is **impassive3428**
 
 However justsomezip.zip is stil password protected inside the combined folder. So we somehow need the passcode to crack open the flag \! 
