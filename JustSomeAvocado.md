@@ -1,13 +1,13 @@
 **Write Up: Just Some Avocado**
 
-Provided is the jpg image provided in the problem→
+Provided is the jpg image in the problem→
 
 ![alt text](avocado.jpg)
 
 
 Using Apri Solve/ Binwalk extract the two hidden files inside this jpg image named as **justsomezip.zip** & **staticnoise.wav** 
 
-So initially both the files are password protected (i.e. the entire zip folder named 00000196.zip). So here use brute force using **hashcat** and **john the ripper** to extract its passcode. I used rock.txt for getting the hashing reverse.
+So initially both the files are password protected (i.e. the entire zip folder named 00000196.zip). So here use brute force using **hashcat** and **john the ripper** to extract its passcode. I used rockyou.txt for getting the hashing reverse.
 
 ![alt text](avocado1.png)
 So password for the combined folder zip is **impassive3428**
@@ -20,10 +20,11 @@ The first and obvious idea to find the passcode is to use the .wav file somehow.
 
 On opening the .wav file we hear some random noises, which is itself an indication to use its spectrogram(steganography) somehow, it might be possible it contains the password for the zip file. 
 
-So constructing the spectogram for staticnoise.wav file using audacity software I obtained a spectrogram which on compression gave the following   
+So constructing the spectrogram for staticnoise.wav file using audacity software I obtained a spectrogram which on compression gave the following   
 as the result→
 
 ![alt text](spectrogram.png)
+
 Now the password is visible as **d41v3ron**
 
 Inside the zip file we find the flag.txt file→
