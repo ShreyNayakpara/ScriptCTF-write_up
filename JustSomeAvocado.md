@@ -2,7 +2,8 @@
 
 Provided is the jpg image provided in the problem→
 
-**![][image1]**
+![alt text](avocado.jpg)
+
 
 Using Apri Solve/ Binwalk extract the two hidden files inside this jpg image named as **justsomezip.zip** & **staticnoise.wav** 
 
