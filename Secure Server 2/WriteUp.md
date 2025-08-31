@@ -33,6 +33,6 @@ Now the same stuff as above for key 1 and 2→
 
 Similarly here too, when they both are equal we have found keys 1 and 2\. 
 
-The script for solving this with the above MITM approach is attached as [**solution.py**](http://solution.py) in the github repo.
+The script for solving this with the above MITM approach is attached as [**solScript.py**](http://solution.py) in the github repo.
 
 **The flag – scriptCTF{s3cr37\_m3ss4g3\_1337\!\_7e4b3f8d}**
