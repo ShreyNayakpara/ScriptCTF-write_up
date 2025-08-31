@@ -5,12 +5,12 @@ Obviously the flag.txt file contains the fake flag and is of no use.
 Begin by inspecting the html based web page provided and try uploading  something to see if anything changes or not. Also inspect the site to check if anything is hidden inside the html comments or not. However this will unfortunately not result in any solutions for this problem.   
 Since the implementation is flawed by carefully exploring the application, we can read **sensitive files** that should not be accessible directly.
 
-1) **Discover vulnerability in the /render/\<filename\> :**
+A) **Discover vulnerability in the /render/\<filename\> :**
 
 The endpoint **/render/\<filename\>** is vulnerable because it allows us to directly fetch files inside **/static/uploads**.  
 Normally, this feature should be restricted to user uploads only, but we can exploit it to read other files stored on the server as long as they are within /static/uploads.
 
-2) **Preparing the secret file :** 
+B) **Preparing the secret file :** 
 
 By visiting **/developer**, we notice that the server sets a cookie. The developer page likely checks for a valid cookie to show sensitive information.
 
@@ -28,7 +28,7 @@ Now, the server saves this cookie value in **secret\_cookie.txt.**
 
 So now we have the actual valid cookie required to access the  protected /developer page. 
 
-3) **Using the valid cookie to get the Flag:**
+C) **Using the valid cookie to get the Flag:**
 
 Finally, we revisit the **/developer** page, but this time we replace our browser cookie with the secret cookie value we retrieved from the text file.
 
