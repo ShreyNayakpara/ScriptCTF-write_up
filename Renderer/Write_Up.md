@@ -22,7 +22,7 @@ But here’s the twist:
 So, to make sure secret\_cookie.txt is not empty, we:
 
 1. Go to **/developer**.  
-2. Manually set the cookie in our browser (any random value, e.g., **test123**).
+2. Manually set the cookie in our browser (any random value, e.g., **shrey123**).
 
 Now, the server saves this cookie value in **secret\_cookie.txt.** 
 
