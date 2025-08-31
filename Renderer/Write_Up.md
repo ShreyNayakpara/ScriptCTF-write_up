@@ -28,7 +28,7 @@ Now, the server saves this cookie value in **secret\_cookie.txt.**
 
 So now we have the actual valid cookie required to access the  protected /developer page. 
 
-     **C) Using the valid cookie to get the Flag:**
+3) **Using the valid cookie to get the Flag:**
 
 Finally, we revisit the **/developer** page, but this time we replace our browser cookie with the secret cookie value we retrieved from the text file.
 
