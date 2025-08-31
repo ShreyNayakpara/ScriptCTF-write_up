@@ -2,19 +2,19 @@
 
 Provided is the jpg image in the problem→
 
-![alt text](avocado.jpg)
+![alt text](attachments/avocado.jpg)
 
 
 Using Apri Solve/ Binwalk extract the two hidden files inside this jpg image named as **justsomezip.zip** & **staticnoise.wav** 
 
 So initially both the files are password protected (i.e. the entire zip folder named 00000196.zip). So here use brute force using **hashcat** and **john the ripper** to extract its passcode. I used rockyou.txt for getting the hashing reverse.
 
-![alt text](avocado1.png)
+![alt text](attachments/avocado1.png)
 So password for the combined folder zip is **impassive3428**
 
 However justsomezip.zip is stil password protected inside the combined folder. So we somehow need the passcode to crack open the flag \! 
 
-![alt text](avocado2.png)
+![alt text](attachments/avocado2.png)
 
 The first and obvious idea to find the passcode is to use the .wav file somehow. Else what’s the use of giving it. LoL\!
 
@@ -23,7 +23,7 @@ On opening the .wav file we hear some random noises, which is itself an indicati
 So constructing the spectrogram for staticnoise.wav file using audacity software I obtained a spectrogram which on compression gave the following   
 as the result→
 
-![alt text](spectrogram.png)
+![alt text](attachments/spectrogram.png)
 
 Now the password is visible as **d41v3ron**
 
